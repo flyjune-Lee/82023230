@@ -2,8 +2,10 @@ configMapGenerator:
 - files:
   - application.yml
   name: 82023230-configmap
-resources:
+
+bases:
 - ../../base
+resources:
 - pvc.yaml
 patchesStrategicMerge:
 - deployment.yaml
