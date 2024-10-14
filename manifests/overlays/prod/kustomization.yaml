@@ -1,11 +1,9 @@
 configMapGenerator:
 - files:
   - application.yml
-  name: 82023230-configmap
-
-bases:
-- ../../base
+  name: "82023230-configmap"
 resources:
+- ../../base
 - pvc.yaml
 patchesStrategicMerge:
 - deployment.yaml
@@ -15,4 +13,4 @@ kind: Kustomization
 namePrefix: prod-
 images:
 - name: cepgstapacr.azurecr.io/82023230
-  newTag: "202410140741"
+  newTag: "202408090453"
