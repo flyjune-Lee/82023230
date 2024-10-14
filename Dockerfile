@@ -9,7 +9,7 @@ COPY target/cloudsample-0.0.1-SNAPSHOT.jar /app/cloudsample-0.0.1-SNAPSHOT.jar
 
 
 # 4. 컨테이너가 시작되면 실행할 명령어 정의
-ENTRYPOINT ["java", "-jar", "/app/cloudsample-0.0.1-SNAPSHOT.jar"]
+#ENTRYPOINT ["java", "-jar", "/app/cloudsample-0.0.1-SNAPSHOT.jar"]
 
 # 5. 기본 포트 설정 (Spring Boot 기본 포트 8080)
 EXPOSE 8080
